@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.2.1" type="baseline" client="gradle" dependencies="false" name="AGP (8.2.1)" variant="all" version="8.2.1">
+
+    <issue
+        id="ScopedStorage"
+        message="READ_EXTERNAL_STORAGE is deprecated (and is not granted) when targeting Android 13+. If you need to query or interact with MediaStore or media files on the shared storage, you should instead use one or more new storage permissions: `READ_MEDIA_IMAGES`, `READ_MEDIA_VIDEO` or `READ_MEDIA_AUDIO`."
+        errorLine1="  &lt;uses-permission android:name=&quot;android.permission.READ_EXTERNAL_STORAGE&quot; />"
+        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="40"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="ScopedStorage"
+        message="WRITE_EXTERNAL_STORAGE is deprecated (and is not granted) when targeting Android 13+. If you need to write to shared storage, use the `MediaStore.createWriteRequest` intent."
+        errorLine1="  &lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot; />"
+        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="58"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="    &lt;activity android:name=&quot;.MainActivity&quot; android:label=&quot;@string/app_name&quot; android:configChanges=&quot;keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode&quot; android:launchMode=&quot;singleTask&quot; android:windowSoftInputMode=&quot;adjustResize&quot; android:exported=&quot;true&quot;>"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="69"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.core:core than 1.3.2 is available: 1.13.1"
+        errorLine1="    implementation &apos;androidx.core:core:1.3.2&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="164"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="The resource `@dimen/abc_edit_text_inset_horizontal_material` is marked as private in androidx.appcompat:appcompat:1.6.1"
+        errorLine1="       android:insetLeft=&quot;@dimen/abc_edit_text_inset_horizontal_material&quot;"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable/rn_edit_text_material.xml"
+            line="17"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="The resource `@dimen/abc_edit_text_inset_horizontal_material` is marked as private in androidx.appcompat:appcompat:1.6.1"
+        errorLine1="       android:insetRight=&quot;@dimen/abc_edit_text_inset_horizontal_material&quot;"
+        errorLine2="                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable/rn_edit_text_material.xml"
+            line="18"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="The resource `@dimen/abc_edit_text_inset_top_material` is marked as private in androidx.appcompat:appcompat:1.6.1"
+        errorLine1="       android:insetTop=&quot;@dimen/abc_edit_text_inset_top_material&quot;"
+        errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable/rn_edit_text_material.xml"
+            line="19"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="The resource `@dimen/abc_edit_text_inset_bottom_material` is marked as private in androidx.appcompat:appcompat:1.6.1"
+        errorLine1="       android:insetBottom=&quot;@dimen/abc_edit_text_inset_bottom_material&quot;"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable/rn_edit_text_material.xml"
+            line="20"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="The resource `@drawable/abc_textfield_default_mtrl_alpha` is marked as private in androidx.appcompat:appcompat:1.6.1"
+        errorLine1="        &lt;item android:state_enabled=&quot;false&quot; android:drawable=&quot;@drawable/abc_textfield_default_mtrl_alpha&quot;/>"
+        errorLine2="                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable/rn_edit_text_material.xml"
+            line="33"
+            column="63"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="The resource `@drawable/abc_textfield_activated_mtrl_alpha` is marked as private in androidx.appcompat:appcompat:1.6.1"
+        errorLine1="        &lt;item android:drawable=&quot;@drawable/abc_textfield_activated_mtrl_alpha&quot;/>"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable/rn_edit_text_material.xml"
+            line="34"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="PermissionImpliesUnsupportedChromeOsHardware"
+        message="Permission exists without corresponding hardware `&lt;uses-feature android:name=&quot;android.hardware.telephony&quot; required=&quot;false&quot;>` tag"
+        errorLine1="  &lt;uses-permission android:name=&quot;android.permission.CALL_PHONE&quot; />"
+        errorLine2="   ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="31"
+            column="4"/>
+    </issue>
+
+    <issue
+        id="PermissionImpliesUnsupportedChromeOsHardware"
+        message="Permission exists without corresponding hardware `&lt;uses-feature android:name=&quot;android.hardware.camera&quot; required=&quot;false&quot;>` tag"
+        errorLine1="  &lt;uses-permission android:name=&quot;android.permission.CAMERA&quot; />"
+        errorLine2="   ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="32"
+            column="4"/>
+    </issue>
+
+    <issue
+        id="PermissionImpliesUnsupportedChromeOsHardware"
+        message="Permission exists without corresponding hardware `&lt;uses-feature android:name=&quot;android.hardware.telephony&quot; required=&quot;false&quot;>` tag"
+        errorLine1="  &lt;uses-permission android:name=&quot;android.permission.PROCESS_OUTGOING_CALLS&quot; />"
+        errorLine2="   ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="36"
+            column="4"/>
+    </issue>
+
+    <issue
+        id="PermissionImpliesUnsupportedChromeOsHardware"
+        message="Permission exists without corresponding hardware `&lt;uses-feature android:name=&quot;android.hardware.telephony&quot; required=&quot;false&quot;>` tag"
+        errorLine1="  &lt;uses-permission android:name=&quot;android.permission.READ_SMS&quot; />"
+        errorLine2="   ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="47"
+            column="4"/>
+    </issue>
+
+    <issue
+        id="PermissionImpliesUnsupportedChromeOsHardware"
+        message="Permission exists without corresponding hardware `&lt;uses-feature android:name=&quot;android.hardware.telephony&quot; required=&quot;false&quot;>` tag"
+        errorLine1="  &lt;uses-permission android:name=&quot;android.permission.RECEIVE_MMS&quot; />"
+        errorLine2="   ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="48"
+            column="4"/>
+    </issue>
+
+    <issue
+        id="PermissionImpliesUnsupportedChromeOsHardware"
+        message="Permission exists without corresponding hardware `&lt;uses-feature android:name=&quot;android.hardware.telephony&quot; required=&quot;false&quot;>` tag"
+        errorLine1="  &lt;uses-permission android:name=&quot;android.permission.RECEIVE_SMS&quot; />"
+        errorLine2="   ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="49"
+            column="4"/>
+    </issue>
+
+    <issue
+        id="PermissionImpliesUnsupportedChromeOsHardware"
+        message="Permission exists without corresponding hardware `&lt;uses-feature android:name=&quot;android.hardware.telephony&quot; required=&quot;false&quot;>` tag"
+        errorLine1="  &lt;uses-permission android:name=&quot;android.permission.RECEIVE_WAP_PUSH&quot; />"
+        errorLine2="   ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="50"
+            column="4"/>
+    </issue>
+
+    <issue
+        id="PermissionImpliesUnsupportedChromeOsHardware"
+        message="Permission exists without corresponding hardware `&lt;uses-feature android:name=&quot;android.hardware.telephony&quot; required=&quot;false&quot;>` tag"
+        errorLine1="  &lt;uses-permission android:name=&quot;android.permission.SEND_SMS&quot; />"
+        errorLine2="   ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="52"
+            column="4"/>
+    </issue>
+
+    <issue
+        id="DataExtractionRules"
+        message="The attribute `android:allowBackup` is deprecated from Android 12 and higher and may be removed in future versions. Consider adding the attribute `android:dataExtractionRules` specifying an `@xml` resource which configures cloud backups and device transfers on Android 12 and higher."
+        errorLine1="  &lt;application android:name=&quot;.MainApplication&quot; android:label=&quot;@string/app_name&quot; android:icon=&quot;@mipmap/ic_launcher&quot; android:roundIcon=&quot;@mipmap/ic_launcher_round&quot; android:allowBackup=&quot;false&quot; android:theme=&quot;@style/AppTheme&quot; android:usesCleartextTraffic=&quot;true&quot;   "
+        errorLine2="                                                                                                                                                                                      ~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="61"
+            column="183"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.integer.react_native_dev_server_port` appears to be unused">
+        <location
+            file="build.gradle"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.google_maps_key` appears to be unused"
+        errorLine1="  &lt;string name=&quot;google_maps_key&quot; templateMergeStrategy=&quot;preserve&quot; translatable=&quot;false&quot;>AIzaSyBH4yQllukD3EEsIXHi0KJ1ssDEPEd5fPs&lt;/string>"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/google_maps_api.xml"
+            line="2"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.happypop3185288` appears to be unused">
+        <location
+            file="src/main/res/raw/happypop3185288.mp3"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.mensajedetextoiphone218138` appears to be unused">
+        <location
+            file="src/main/res/raw/mensajedetextoiphone218138.mp3"/>
+    </issue>
+
+</issues>

@@ -1,0 +1,44 @@
+buildscript {
+    ext {
+        buildToolsVersion = "34.0.0"
+        minSdkVersion = 24
+        compileSdkVersion = 34
+        targetSdkVersion = 34
+        ndkVersion = "26.1.10909125"
+        // kotlinVersion = "1.9.24"
+        kotlinVersion = "1.7.20"
+
+        // playServicesVersion = "16.0.1"
+        // playServicesVersion = "21.+"
+        googleplayServicesVersion = "17.0.1"
+        googlePlayServicesVisionVersion = "19.0.0"
+        androidMapsUtilsVersion = "2.2.3"
+        playServicesLocationVersion = "21.0.0"
+        // androidMapsUtilsVersion = "2.3.0"
+        kotlinVersion = '1.7.10'
+    }
+    repositories {
+        google()
+        mavenCentral()
+        // jcenter()
+        // configurations.all {
+        //     resolutionStrategy {
+        //         force "com.google.android.gms:play-services-location:20.0.0"
+                // force "com.google.android.gms:play-services-location:21.0.1"
+        //     }}
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        // classpath("com.google.android.gms:play-services-location:21.0.0")
+        // classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10"
+
+        classpath("com.google.gms:google-services:4.2.0")
+    }
+
+
+}
+
+apply plugin: "com.facebook.react.rootproject"
+// playServicesLocationVersion 
